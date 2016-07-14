@@ -1,0 +1,1 @@
+# http://postolenko.github.io/spam_assistant
