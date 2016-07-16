@@ -1513,7 +1513,7 @@ footer {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    top: 16px;
+    top: 10px;
     cursor: pointer;
     width: 36px;
     height: 8px;
@@ -1532,6 +1532,7 @@ footer {
 }
 
 .scroll-to-top div:nth-child(1) {
+    top: 5px;
     -moz-transform: rotate(-46deg);
     -ms-transform: rotate(-46deg);
     -webkit-transform: rotate(-46deg);
@@ -1540,6 +1541,7 @@ footer {
 }
 
 .scroll-to-top div:nth-child(2) {
+    top: 5px;
     left: 13px;
     -moz-transform: rotate(46deg);
     -ms-transform: rotate(46deg);
