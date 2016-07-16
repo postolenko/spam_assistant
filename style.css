@@ -892,7 +892,7 @@ select::-ms-expand {
 .thumbnail-h3 {
     display: inline-block;
     vertical-align: middle;
-    width: 58%;
+    width: 68%;
     font-family: "Proxima Nova Rg", Arial, Verdana, sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -904,11 +904,11 @@ select::-ms-expand {
 .col-header-img-box {
     display: inline-block;
     vertical-align: middle;
-    width: 42%;
+    width: 32%;
     text-align: left;
 }
 
-.col-header-img-box {
+.col-header-img-box img {
     height: auto;
     width: auto;
 }
