@@ -154,6 +154,10 @@
 	    width: 96%;
 	}
 
+	.btn-block button {
+	    left: 0;
+	}
+
 	.footer {
 		padding: 0;
 	}

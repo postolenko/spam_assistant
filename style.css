@@ -988,7 +988,7 @@ select::-ms-expand {
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
-    padding: 0 2% 0 0;
+    padding: 0 8% 0 0;
 }
 
 .price {
@@ -1002,7 +1002,7 @@ select::-ms-expand {
     font-size: 25px;
     line-height: 30px;
     color: #000000;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 5px;
 }
 
 .order-btn-box {

@@ -8,7 +8,7 @@ $(document).ready(function() {
     bodyHeight = w.innerHeight || e.clientHeight || g.clientHeight;
 
 
-    getNavigationHeight();
+    // getNavigationHeight();
 
     getScrollToTopBtn();
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     $(window).resize(function() {
 
-        getNavigationHeight();
+        // getNavigationHeight();
 
     });
 
