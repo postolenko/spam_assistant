@@ -87,17 +87,9 @@ $(document).ready(function() {
           return ((document.compatMode || isIE) && !isOpera) ? (document.compatMode == 'CSS1Compat') ? document.documentElement.clientHeight : document.body.clientHeight : (document.parentWindow || document.defaultView).innerHeight;
         }
 
-        navBlock.style.height = $(".main-content").height() - 70  + "px";
-
-        console.log(getDocumentHeight() + "   " + $(".main-content").height());
+        navBlock.style.height = $(".content").outerHeight(true)  + "px";
 
     }
-
-
-    
-
-    // console.log( getDocumentHeight() +"   "+ getViewportHeight() );
-
 
 
 // -----------------
