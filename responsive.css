@@ -18,22 +18,6 @@
 		background: none;
 	}
 
-	.nav-list {
-		position: fixed;
-		left: 0;
-		overflow-y: hidden;
-	}
-
-	.nav-list ul {
-	    display: block;
-	    width: 120%;
-	    padding: 40px 20% 0 0;
-	    max-height: 100vh;
-	    position: relative;
-	    overflow-y: scroll;
-	    bottom: 40px
-	}
-
 	.logo-box {
 		border-bottom: 1px solid #646e79;
 		position: fixed;
@@ -56,6 +40,7 @@
 	}
 
 	.nav-list {
+		position: fixed;
 		overflow: hidden;
 	    padding: 40px 0;
 	    width: 60%;
@@ -85,6 +70,16 @@
 
 	.nav-list.respnavleftcoor {
 		left: 0;
+	}
+
+	.nav-list ul {
+	    display: block;
+	    width: 120%;
+	    padding: 40px 20% 0 0;
+	    max-height: 100vh;	    
+	    overflow-y: scroll;
+	    position: relative;
+	    bottom: 40px;
 	}
 
 	.main-content-box {
@@ -186,6 +181,11 @@
 		bottom: 4%;
 		right: 3%;
 		width: 20px;
+	}
+
+	.scroll-to-top div {
+		height: 2px;
+	    background: rgba(7, 76, 116, 1);
 	}
 
 }
