@@ -138,6 +138,7 @@
 	.right-col,
 	.left-col {
 		width: 100%;
+		padding: 0;
 	}
 
 
@@ -148,6 +149,14 @@
 	.achievement.num-2,
 	.achievement.num-3 {
 		left: 0;
+	}
+
+	.col-header-img-box {
+	    text-align: right;
+	}
+
+	.col-header {
+	    min-height: auto;
 	}
 
 	.table-products {

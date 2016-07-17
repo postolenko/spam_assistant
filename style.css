@@ -4,7 +4,7 @@
 /*-- Fonts --*/
 /*------------------*/
 
-@font-face {
+/*@font-face {
     font-family: "Proxima Nova Th";
     src: url("fonts/ProximaNova-Extrabld.eot");
     src: url("fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"),
@@ -14,9 +14,9 @@
         url("fonts/ProximaNova-Extrabld.svg#ProximaNova-Extrabld") format("svg");
     font-weight: 800;
     font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
     font-family: "Proxima Nova Lt";
     src: url("fonts/ProximaNova-LightIt.eot");
     src: url("fonts/ProximaNova-LightIt.eot?#iefix") format("embedded-opentype"),
@@ -26,7 +26,7 @@
         url("fonts/ProximaNova-LightIt.svg#ProximaNova-LightIt") format("svg");
     font-weight: 300;
     font-style: italic;
-}
+}*/
 
 @font-face {
     font-family: "Proxima Nova Bl";
@@ -40,7 +40,7 @@
     font-style: normal;
 }
 
-@font-face {
+/*@font-face {
     font-family: "Proxima Nova Rg";
     src: url("fonts/ProximaNova-BoldIt.eot");
     src: url("fonts/ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"),
@@ -50,7 +50,7 @@
         url("fonts/ProximaNova-BoldIt.svg#ProximaNova-BoldIt") format("svg");
     font-weight: 700;
     font-style: italic;
-}
+}*/
 
 @font-face {
     font-family: "Proxima Nova Rg";
@@ -76,7 +76,7 @@
     font-style: normal;
 }
 
-@font-face {
+/*@font-face {
     font-family: "Proxima Nova Lt";
     src: url("fonts/ProximaNova-Light.eot");
     src: url("fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"),
@@ -86,9 +86,9 @@
         url("fonts/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
     font-weight: 300;
     font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
     font-family: "Proxima Nova Rg";
     src: url("fonts/ProximaNova-RegularIt.eot");
     src: url("fonts/ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"),
@@ -98,13 +98,7 @@
         url("fonts/ProximaNova-RegularIt.svg#ProximaNova-RegularIt") format("svg");
     font-weight: 400;
     font-style: italic;
-}
-
-
-
-/*-- Icon Fonts --*/
-
-
+}*/
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
@@ -264,7 +258,7 @@ select::-ms-expand {
 
 .respmenubtn-box {
     display: none;
-    width: 30%;
+    width: 28%;
     padding: 0 0 0 2%;
 }
 
@@ -344,9 +338,10 @@ select::-ms-expand {
 }
 
 .nav-section {
-    display: inline-block;
-    vertical-align: top;
-    width: 21%;
+    /*display: inline-block;
+    vertical-align: top;*/
+    display: table-cell;
+    width: 20%;
     height: 100%;
     background: rgba(44, 44, 44, 1);
     -webkit-box-sizing: border-box;
@@ -374,9 +369,6 @@ select::-ms-expand {
 .nav-list {
     z-index: 9;
 }
-
-/*--  Пересмотреть рамку в ссылках при наведении --*/
-
 
 .nav-link {
     display: block;
@@ -407,10 +399,6 @@ select::-ms-expand {
     transition-duration: 0.3s;
     transition-timing-function: ease;
 }
-
-/*.nav-link:nth-child(1) {
-    border-bottom: 1px solid transparent;
-}*/
 
 .nav-link:link,
 .nav-link:visited {
@@ -476,9 +464,10 @@ select::-ms-expand {
 /* ----- CONTENT ------ */
 
 .main-content-box {
-    display: inline-block;
-    vertical-align: top;
-    width: 77%;
+    /*display: inline-block;
+    vertical-align: top;*/
+    display: table-cell;
+    width: 79%;
     height: 100%;
     padding: 0 0 0 2%;
 }
@@ -516,10 +505,6 @@ select::-ms-expand {
 
 .promo {
     padding: 40px 0 0 0;
-}
-
-.promo-hgroup {
-
 }
 
 .promo-hgroup h2 {
@@ -621,9 +606,6 @@ select::-ms-expand {
     background: rgba(80, 150, 201, 1);
     border: 1px solid #5b9cc2;
 }
-
-
-
 
 .promo-img-box {
     text-align: center;
@@ -904,12 +886,13 @@ select::-ms-expand {
     line-height: 0;
     text-align: left;
     padding: 45px 0 0 0;
+    min-height: 125px;
 }
 
 .thumbnail-h3 {
     display: inline-block;
-    vertical-align: middle;
-    width: 59%;
+    vertical-align: top;
+    width: 61%;
     font-family: "Proxima Nova Rg", Arial, Verdana, sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -920,9 +903,9 @@ select::-ms-expand {
 
 .col-header-img-box {
     display: inline-block;
-    vertical-align: middle;
-    width: 41%;
-    text-align: left;
+    vertical-align: top;
+    width: 39%;
+    text-align: right;
 }
 
 .col-header-img-box img {
