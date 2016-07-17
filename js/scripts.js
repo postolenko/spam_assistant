@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     $(window).resize(function() {
 
-        // getNavigationHeight();
+        getNavigationHeight();
 
     });
 
@@ -66,8 +66,8 @@ $(document).ready(function() {
 
     function getNavigationHeight() {
 
-        // navBlock = document.getElementsByClassName("nav-section-bg")[0];
-        // parentNavBlock = document.getElementsByClassName("nav-section")[0];
+        navBlock = document.getElementsByClassName("nav-section-bg")[0];
+        parentNavBlock = document.getElementsByClassName("nav-section")[0];
 
         // heightParentNavBlock = parentNavBlock.innerHeight || parentNavBlock.clientHeight || parentNavBlock.clientHeight;
 
@@ -75,7 +75,43 @@ $(document).ready(function() {
 
         // console.log(heightParentNavBlock);
 
+        var ua = navigator.userAgent.toLowerCase();
+        var isOpera = (ua.indexOf('opera')  > -1);
+        var isIE = (!isOpera && ua.indexOf('msie') > -1);
+
+        function getDocumentHeight() {
+          return Math.max(document.compatMode != 'CSS1Compat' ? document.body.scrollHeight : document.documentElement.scrollHeight, getViewportHeight());
+        }
+
+        function getViewportHeight() {
+          return ((document.compatMode || isIE) && !isOpera) ? (document.compatMode == 'CSS1Compat') ? document.documentElement.clientHeight : document.body.clientHeight : (document.parentWindow || document.defaultView).innerHeight;
+        }
+
+        navBlock.style.height = $(".main-content").height() - 70  + "px";
+
+        console.log(getDocumentHeight() + "   " + $(".main-content").height());
+
     }
+
+
+    
+
+    // console.log( getDocumentHeight() +"   "+ getViewportHeight() );
+
+
+
+// -----------------
+
+$(document).ready(function() {
+
+    $(".respmenubtn").click(function() {
+
+        $(".nav-list").toggleClass("respnavleftcoor");
+        $(".respmenubtn").toggleClass("respmenubtn-active");
+
+    });
+
+});
 
 
 // -----------------
