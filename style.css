@@ -4,30 +4,6 @@
 /*-- Fonts --*/
 /*------------------*/
 
-/*@font-face {
-    font-family: "Proxima Nova Th";
-    src: url("fonts/ProximaNova-Extrabld.eot");
-    src: url("fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"),
-        url("fonts/ProximaNova-Extrabld.woff2") format("woff2"),
-        url("fonts/ProximaNova-Extrabld.woff") format("woff"),
-        url("fonts/ProximaNova-Extrabld.ttf") format("truetype"),
-        url("fonts/ProximaNova-Extrabld.svg#ProximaNova-Extrabld") format("svg");
-    font-weight: 800;
-    font-style: normal;
-}*/
-
-/*@font-face {
-    font-family: "Proxima Nova Lt";
-    src: url("fonts/ProximaNova-LightIt.eot");
-    src: url("fonts/ProximaNova-LightIt.eot?#iefix") format("embedded-opentype"),
-        url("fonts/ProximaNova-LightIt.woff2") format("woff2"),
-        url("fonts/ProximaNova-LightIt.woff") format("woff"),
-        url("fonts/ProximaNova-LightIt.ttf") format("truetype"),
-        url("fonts/ProximaNova-LightIt.svg#ProximaNova-LightIt") format("svg");
-    font-weight: 300;
-    font-style: italic;
-}*/
-
 @font-face {
     font-family: "Proxima Nova Bl";
     src: url("fonts/ProximaNova-Black.eot");
@@ -39,18 +15,6 @@
     font-weight: 900;
     font-style: normal;
 }
-
-/*@font-face {
-    font-family: "Proxima Nova Rg";
-    src: url("fonts/ProximaNova-BoldIt.eot");
-    src: url("fonts/ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"),
-        url("fonts/ProximaNova-BoldIt.woff2") format("woff2"),
-        url("fonts/ProximaNova-BoldIt.woff") format("woff"),
-        url("fonts/ProximaNova-BoldIt.ttf") format("truetype"),
-        url("fonts/ProximaNova-BoldIt.svg#ProximaNova-BoldIt") format("svg");
-    font-weight: 700;
-    font-style: italic;
-}*/
 
 @font-face {
     font-family: "Proxima Nova Rg";
@@ -76,29 +40,6 @@
     font-style: normal;
 }
 
-/*@font-face {
-    font-family: "Proxima Nova Lt";
-    src: url("fonts/ProximaNova-Light.eot");
-    src: url("fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"),
-        url("fonts/ProximaNova-Light.woff2") format("woff2"),
-        url("fonts/ProximaNova-Light.woff") format("woff"),
-        url("fonts/ProximaNova-Light.ttf") format("truetype"),
-        url("fonts/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
-    font-weight: 300;
-    font-style: normal;
-}*/
-
-/*@font-face {
-    font-family: "Proxima Nova Rg";
-    src: url("fonts/ProximaNova-RegularIt.eot");
-    src: url("fonts/ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"),
-        url("fonts/ProximaNova-RegularIt.woff2") format("woff2"),
-        url("fonts/ProximaNova-RegularIt.woff") format("woff"),
-        url("fonts/ProximaNova-RegularIt.ttf") format("truetype"),
-        url("fonts/ProximaNova-RegularIt.svg#ProximaNova-RegularIt") format("svg");
-    font-weight: 400;
-    font-style: italic;
-}*/
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
@@ -115,7 +56,7 @@
 html {
     background-color: rgba(239, 244, 255, 1);
     color: #000000;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: "Proxima Nova Rg", Arial, Verdana, sans-serif;
     font-size: 13px;
     line-height: 21px;
 }
@@ -125,10 +66,6 @@ body {
     height: 100%;
     min-width: 100%;
     background-color: rgba(239, 244, 255, 1);
-}
-
-body {
-
 }
 
 .wrapper {
@@ -178,10 +115,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 
 
 
-
-
-
-
 /*-------------------------------------------*/
 /* ----- DEFAULT STYLES ------ */
 /*-------------------------------------------*/
@@ -200,12 +133,23 @@ h1 {
 }
 
 button {
-
-
+    min-width: 134px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #0093e7;
+    text-align: center;
+    background: rgba(241, 241, 241, 1);
+    border: 1px solid #0093e7;
+    cursor: pointer;
 }
 
 h2 {
-
+    font-family: "Proxima Nova Rg", Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 
@@ -341,9 +285,7 @@ select::-ms-expand {
 .nav-section {
     display: inline-block;
     vertical-align: top;
-    /*display: table-cell;*/
     width: 20%;
-    /*height: 100%;*/
     background: rgba(44, 44, 44, 1);
 }
 
@@ -451,7 +393,7 @@ select::-ms-expand {
     display: inline-block;
     vertical-align: middle;
     width: 70%;
-    font-family: "Proxima Nova Rg";
+    font-family: "Proxima Nova Rg", Arial, Verdana, sans-serif;
     font-weight: 400;
     font-size: 19px;
     line-height: 25px;
@@ -464,7 +406,6 @@ select::-ms-expand {
 .main-content-box {
     display: inline-block;
     vertical-align: top;
-    /*display: table-cell;*/
     width: 79%;
     height: 100%;
     padding: 0 0 0 2%;
