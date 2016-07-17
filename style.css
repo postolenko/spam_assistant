@@ -1448,11 +1448,18 @@ footer {
 .contact-form-box .send-btn:after {
     display: inline-block;
     vertical-align: middle;
-    content: "\2192";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0 0 2px 8px;
+    content: "";
+    width: 18px;
+    height: 16px;
+    margin: 0 0 2px 14px;
+    background-image: url(img/send_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.contact-form-box .send-btn:hover:after {
+    background-image: url(img/send_arrow_hover.png);
 }
 
 .scroll-to-top-box {
