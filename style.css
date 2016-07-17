@@ -114,6 +114,13 @@ input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s eas
 input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
 
+.animation-delay {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
 
 /*-------------------------------------------*/
 /* ----- DEFAULT STYLES ------ */
