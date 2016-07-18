@@ -51,12 +51,16 @@ $(document).ready(function() {
 
         }
 
+        console.log(bodyWidth);
+
 
     });
 
     $(window).resize(function() {
 
         getNavigationHeight();
+
+        getNavMenuFixedPosition();
 
     });
 
@@ -71,7 +75,9 @@ $(document).ready(function() {
 
     function getNavMenuFixedPosition() {
 
-            if ($(window).scrollTop() > $(".logo-box").height() ) {
+            bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+            if ($(window).scrollTop() > $(".logo-box").height() && bodyWidth > 768) {
 
 
                 $(".logo-box").fadeOut(300);
