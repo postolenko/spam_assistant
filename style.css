@@ -297,9 +297,6 @@ select::-ms-expand {
     background: rgba(44, 44, 44, 1);
 }
 
-.nav-section-bg {
-    /*position: fixed;*/
-}
 
 .logo-box {
     background: rgba(44, 44, 44, 1);
@@ -318,30 +315,18 @@ select::-ms-expand {
     height: auto;
 }
 
-/*.nav-list {
-    z-index: 9;
-    position: relative;
-    left: 0;
-    top: 0;
-}*/
-
 .nav-list {
     position: fixed;
-    /*position: relative;*/
     overflow: hidden;
-    /*padding: 40px 0;*/
     width: 20%;
-    /*top: 0;*/
     left: 0%;
     z-index: 8;
 
 }
 
-
 .nav-list ul {
     display: block;
     width: 120%;
-    /*padding: 40px 20% 0 0;*/
     padding: 40px 12% 0 0;
     max-height: 100vh;      
     overflow-y: scroll;
