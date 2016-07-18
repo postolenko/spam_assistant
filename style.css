@@ -181,7 +181,8 @@ a:active {
 
 .row {
     display: block;
-    max-width: 1240px;
+    /*max-width: 1240px;*/
+    max-width: 1900px;
     margin: 0 auto;
     padding: 0;
 }
@@ -563,7 +564,8 @@ select::-ms-expand {
     height: 490px;
     margin: 20px auto 0 auto;
     position: relative;
-    left: -4%;
+    /*left: -4%;*/
+    left: -3.7%;
 }
 
 .main-content-sections {
