@@ -6,14 +6,32 @@ $(document).ready(function() {
     g = d.getElementsByTagName('body')[0],
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-    var navBlock;
+    var navBlock = document.getElementsByClassName("nav-section")[0];
+
+    var navList = document.getElementsByClassName("nav-list")[0];
+
+    var footer = document.getElementsByClassName("footer")[0];
+
+    var navBlockCoor = navBlock.getBoundingClientRect();
+    var navListCoor = navList.getBoundingClientRect();
+    var footerCoor = footer.getBoundingClientRect();
+
+    var countOperation = 0;
+    var countScroll = 0;
 
 
     getNavigationHeight();
 
+
     if(bodyWidth <= 768) {
 
         getScrollToTopBtn();
+
+    }
+
+     if(bodyWidth > 768) {
+
+        getNavMenuFixedPosition();
 
     }
     
@@ -27,6 +45,13 @@ $(document).ready(function() {
         
         }
 
+        if(bodyWidth > 768) {
+
+            getNavMenuFixedPosition();
+
+        }
+
+
     });
 
     $(window).resize(function() {
@@ -39,9 +64,73 @@ $(document).ready(function() {
 
     function getNavigationHeight() {
 
-        navBlock = document.getElementsByClassName("nav-section-bg")[0];
-
         navBlock.style.height = $(".main-content").height() - 70 + "px";
+
+    }
+
+
+    function getNavMenuFixedPosition() {
+
+            if ($(window).scrollTop() > $(".logo-box").height() ) {
+
+
+                $(".logo-box").fadeOut(300);
+                
+
+            } else {
+
+
+                $(".logo-box").fadeIn(300);
+
+
+            }
+
+            console.log(countOperation);
+
+            // if( $(".footer").offset().top <=  ( $(".nav-list").offset().top + $(".nav-list-ul").height() ) ) {
+
+            //     ++countScroll;
+
+            //     // if(countScroll == 1) {
+
+            //         $(".nav-list").css({
+            //                     // "bottom" : $(".footer").outerHeight(true) + 70 + "px"
+            //                     "position":"relative",
+            //                     "top" : $(".nav-section").height() - $(".logo-box").height() - $(".nav-list").height() + "px"
+            //                     // "top" : 0 + "px"
+            //                 });
+
+            //         countOperation = 1;
+
+            //         console.log(countOperation +"   "+ countScroll);
+
+            //     // }
+                
+            //     $(".nav-list-ul").offset().top = $(".footer").offset().top - $(".nav-list-ul").height();
+
+            // } else {
+
+            //     // countScroll = 0;
+
+            //     // // if( countOperation == 1 ) {
+
+            //     //     $(".nav-list").css({
+            //     //                     "bottom" : 0 + "px"
+            //     //                 });
+
+            //     //     // countOperation = 0;
+
+            //     //     console.log(countOperation);
+                    
+
+            //     // // }
+
+            //     $(".nav-list-ul").offset().top = 0;
+
+            // }
+ 
+
+        console.log($(".footer").offset().top + "   " +  ( $(".nav-list-ul").offset().top + $(window).height() ));
 
     }
 
