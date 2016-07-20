@@ -308,12 +308,12 @@ select::-ms-expand {
     z-index: 9;
     font-size: 0;
     line-height: 0;
+    text-align: center;
 }
 
-.logo-box img {
-    
+.logo-box img {    
     width: 100%;
-    max-width: 230px;
+    max-width: 180px;
     margin: 0 auto;
     height: auto;
 }

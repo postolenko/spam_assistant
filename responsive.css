@@ -36,7 +36,8 @@
 	.logo-box img {
 	    width: auto;
 	    height: 30px;
-	    margin: 0 auto;
+	    /*margin: 0 auto;*/
+	    float: right;
 	}
 
 	.nav-list {
