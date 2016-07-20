@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     var navBlock = document.getElementsByClassName("nav-section")[0];
 
-    getNavigationHeight();
+    // getNavigationHeight();
 
     getNavMenuFixedPosition();
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
 
     $(window).resize(function() {
 
-        getNavigationHeight();
+        // getNavigationHeight();
 
         getNavMenuFixedPosition();
 
@@ -47,7 +47,8 @@ $(document).ready(function() {
 
     function getNavigationHeight() {
 
-        navBlock.style.height = $(".main-content").height() - 70 + "px";
+        // navBlock.style.height = $(".main-content").height() + "px";
+        
 
     }
 
