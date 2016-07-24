@@ -6,7 +6,7 @@ $(document).ready(function() {
     g = d.getElementsByTagName('body')[0],
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-    var navBlock = document.getElementsByClassName("nav-section")[0];
+    // var navBlock = document.getElementsByClassName("nav-section")[0];
 
     // getNavigationHeight();
 
